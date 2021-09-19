@@ -1,1 +1,34 @@
 @import "reset.css";
+
+:root{
+    --lightBlueColor: #3498db;
+    --darkGray: #515151;
+    --lightGray:#f1f1f1;
+    --brown:rgb(129, 54, 11);
+    --lightColor: #fff;
+    --darkGreenColor : #16a085;
+
+}
+body{
+    background:  url(../images/travelWithUs.jpeg) no-repeat center top;
+    background-size: cover;
+   
+    
+}
+/* start header*/
+navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 9rem;
+    color:var(--darkGreenColor);
+    font-size: 1.3rem;
+}
+#logo{
+    font-family: 'Raleway', sans-serif;
+}
+#user{
+    font-size: 3rem;
+    color: var(--brown);
+}
+/* end header*/

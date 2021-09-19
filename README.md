@@ -7,7 +7,7 @@ region to flight, checkin and checkout date.
 Figma:https://www.figma.com/file/xGrhf4dmJR56rEamj4n5ba/Travel-with-us-danial-salahi-front-end-mentorship?node-id=0%3A1
 
 - [] logoFont: Raleway!
-- [] bodyFont: roboto!
+- [x] bodyFont: roboto!
 - [] responsive: iphone X , iPad, iPad Pro , Desktop!
 - [] upload on netlify!
 
