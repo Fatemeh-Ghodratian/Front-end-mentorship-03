@@ -6,20 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <title>Travel With Us</title>
 </head>
 <body>
     <header>
             <navbar>
                     <h1 id="logo">Travel With Us</h1>
-                    <a href="#" id="user">
-                            <i class="fas fa-house-user"></i>
+                    <a href="#" id="account">
+                            <span>Account</span>
+                            <i class="fas fa-house-user user-icon"></i>
                     </a>
             </navbar>
     </header>
     <main>
+            <div class="searchBox">
+                    <form class="searchForm">
+                        <div class="formItems right-border">
+                            <label for="regionSelect" class="formLable">Where you go?</label>
+                            <select name="regionSelect" id="regionSelect" class="formInuptStyle">
+                                <option value="Select a region">Select a region</option>
+                                <option value="Turkey">Turkey</option>
+                                <option value="Germany">Germany</option>
+                                <option value="Netherland">Netherland</option>
+                                <option value="Canada">Canada</option>
+                            </select>
+                        </div>
+                        <div class="formItems showBorder">
+                            <label for="checkIn" class="formLable">check in</label>
+                            <input type="text" id="checkIn" class="formInuptStyle datepicker" placeholder="Add a date" autocomplete="off"/>
+                        </div>
+                        <div class="formItems showBorder">
+                                <label for="checkOut" class="formLable">check out</label>
+                                <input type="text" id="checkOut" class="formInuptStyle datepicker "  placeholder="Add a date" autocomplete="off"/>
+                        </div>
+                        <div class="search">
+                            <button id="searchBtn" type="submit">Search </button>
+                        </div>
+                    </form>
+        
+                </div>
 
     </main>
     
 </body>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+$( function() {
+  $( ".datepicker" ).datepicker();
+} );
+</script>
 </html>

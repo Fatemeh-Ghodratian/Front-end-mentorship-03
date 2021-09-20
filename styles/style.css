@@ -3,8 +3,8 @@
 :root{
     --lightBlueColor: #3498db;
     --darkGray: #515151;
-    --lightGray:#f1f1f1;
-    --brown:rgb(129, 54, 11);
+    --lightGray:#b6b2b2;
+    --brown:rgb(165, 79, 29);
     --lightColor: #fff;
     --darkGreenColor : #16a085;
 
@@ -12,8 +12,6 @@
 body{
     background:  url(../images/travelWithUs.jpeg) no-repeat center top;
     background-size: cover;
-   
-    
 }
 /* start header*/
 navbar{
@@ -27,8 +25,125 @@ navbar{
 #logo{
     font-family: 'Raleway', sans-serif;
 }
-#user{
+/* start accound section*/
+#account{   
+    background: var(--lightColor);
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+#account span{
+    padding-top: .5rem;
+    font-size:1.2rem;
+    font-weight: bold;
+    color: var(--darkGreenColor);
+}
+.user-icon{
     font-size: 3rem;
     color: var(--brown);
 }
+/* end accound section*/
 /* end header*/
+
+/*start main content*/
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    max-height: 100vh;
+}
+/*start search box*/
+.searchBox{
+    display: inline-flex;
+    flex-wrap:  wrap;
+    justify-content: space-around;
+    background: var(--lightColor);
+    padding: 1.5rem 1.5rem;
+    border-radius: 2rem;
+    max-width: 70vw;
+    
+}
+/*start Form style*/
+.searchForm{
+    display: inline-flex;
+    flex-wrap:  wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.formItems{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1rem;
+    width: 15rem;
+}
+.showBorder{
+    border-left: var(--darkGray) solid .1rem;
+}
+.formLable{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--darkGray);
+    padding: 0 1rem;
+}
+/*start input styling*/
+.formInuptStyle{
+    border: none;
+    border-radius: 1rem;
+    padding: 0.7rem 1rem;
+    font-family: 'Roboto';
+    font-weight: bold;
+    color:var(--lightGray);
+    font-size: 1.1rem;
+    outline: none;  
+}
+::placeholder{
+    font-weight: bold;
+    color:var(--lightGray);
+    font-size: 1.1rem;
+}
+select{
+    -webkit-appearance: none;
+}
+/*end input styling*/
+
+/*button*/
+#searchBtn{
+    background: var(--darkGreenColor);
+    padding: 1rem .1rem;
+    border: none;
+    border-radius: 1rem;
+    color: var(--lightColor);
+    font-size: 1.2rem;
+    font-weight: bold;
+    align-items: center;
+    width: 10rem;
+}
+/*end Form style*/
+/*end main content*/
+
+/*start responsive changes*/
+@media screen and (max-width: 920px){
+    .searchForm{
+        display:flex;
+        flex-direction: column;
+    }
+    .showBorder{
+        border-left: none;
+        border-top:  var(--darkGray) solid .1rem;
+    }
+    navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 2rem;
+        color:var(--darkGreenColor);
+        font-size: 1.1rem;
+    }
+}
+/*end responsive changes*/
