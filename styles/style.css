@@ -129,9 +129,18 @@ select{
 
 /*start responsive changes*/
 @media screen and (max-width: 920px){
+    .searchBox{
+        min-width: 50vw;
+        max-width: 70vw;
+    }
     .searchForm{
         display:flex;
         flex-direction: column;
+    }
+    .formItems{
+        padding-top: 2rem;
+        
+        width: 40vw;
     }
     .showBorder{
         border-left: none;
