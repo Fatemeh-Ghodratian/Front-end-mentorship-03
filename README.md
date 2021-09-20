@@ -17,5 +17,5 @@ https://www.figma.com/file/xGrhf4dmJR56rEamj4n5ba/Travel-with-us-danial-salahi-f
 
 additional points:
 - [] using SASS!
-- [] using JS!
+- [x] using JS!
 
