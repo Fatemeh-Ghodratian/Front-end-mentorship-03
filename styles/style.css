@@ -10,7 +10,7 @@
 
 }
 body{
-    background:  url(../images/travelWithUs.jpeg) no-repeat center top;
+    background:  url(../images/travel.jpg) no-repeat center top;
     background-size: cover;
 }
 /* start header*/
@@ -65,7 +65,6 @@ main{
     padding: 1.5rem 1.5rem;
     border-radius: 2rem;
     max-width: 70vw;
-    
 }
 /*start Form style*/
 .searchForm{
@@ -109,6 +108,7 @@ main{
 }
 select{
     -webkit-appearance: none;
+    background: transparent;
 }
 /*end input styling*/
 
@@ -139,7 +139,6 @@ select{
     }
     .formItems{
         padding-top: 2rem;
-        
         width: 40vw;
     }
     .showBorder{
