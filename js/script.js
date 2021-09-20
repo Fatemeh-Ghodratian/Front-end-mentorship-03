@@ -10,25 +10,32 @@ function searchFunction() {
         if(region == "Select a region" && checkIn==0 && checkOut==0)
     {
         alert("please Select a 'region' and choose 'check in' and 'check out' date");
+        location.reload();
     }
     else if ( region == "Select a region" && checkIn==0){
         alert("please Select a 'region' and choose 'check in' date");
+        location.reload();
     }
     else if ( region == "Select a region" && checkOut==0){
         alert("please Select a 'region' and choose 'check out' date");
+        location.reload();
     }
     else if (checkIn==0 && checkOut==0){
         alert("please choose 'check in' and 'check out' date");
+        location.reload();
     }
     else if (checkIn==0 ||  checkOut==0){
         alert("it seems that you didn't choose 'check in' or 'check out' date");
+        location.reload();
     }
     if(region == "Select a region")
     {
         alert("please Select a 'region'");
+        location.reload();
     }
     else if (currentDate.setHours(0, 0, 0, 0)== checkInDate.setHours(0, 0, 0, 0) || currentDate.setHours(0, 0, 0, 0)== checkOutDate.setHours(0, 0, 0, 0)){
         alert("you can't choose 'Today' for 'check in' or 'check out");
+        location.reload();
     }
     else if(region != "Select a region" && checkIn!=0 && checkOut!=0) {
         console.log(region);
