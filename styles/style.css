@@ -129,6 +129,10 @@ select{
 
 /*start responsive changes*/
 @media screen and (max-width: 920px){
+    body{
+        background:  url(../images/travel-size2.jpg) no-repeat center top;
+        background-size: cover;
+    }
     .searchBox{
         min-width: 50vw;
         max-width: 70vw;
@@ -152,6 +156,13 @@ select{
         padding: 2rem 2rem;
         color:var(--darkGreenColor);
         font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+    body{
+        background:  url(../images/travel-size3.jpg) no-repeat center top;
+        background-size: cover;
     }
 }
 /*end responsive changes*/
